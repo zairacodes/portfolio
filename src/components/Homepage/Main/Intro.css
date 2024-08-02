@@ -1,3 +1,7 @@
+.intro-container {
+    padding-bottom: 2rem;
+}
+
 .intro-text, .intro-subtext {
     margin: 0;
     text-align: left;
