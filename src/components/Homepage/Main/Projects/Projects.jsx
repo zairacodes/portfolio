@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import projectsData from "../../../../assets/projects.json";
 
 function Projects() {
   return (
-    <>
-      <div>Projects</div>
+    <section className="projects-container">
       <div>
-        <ProjectCard />
+        <ProjectCard projects={projectsData} />
       </div>
-    </>
+    </section>
   );
 }
 
