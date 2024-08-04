@@ -1,14 +1,17 @@
 import React from "react";
-import projects from "../../../../assets/projects.json";
 
-function ProjectCard() {
+function ProjectCard({ projects }) {
   return (
     <div>
       {projects.map((project, index) => (
-        <div key={index}>
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <img src={project.image} alt={`${project.title} – Preview`} />
+        <div key={index} className="projectcard-container">
+          <img
+            className="projectcard-image"
+            src={project.image}
+            alt={`${project.title} – Preview`}
+          />
+          <h3 className="projectcard-title">{project.title}</h3>
+          <p className="projectcard-description">{project.description}</p>
         </div>
       ))}
     </div>
