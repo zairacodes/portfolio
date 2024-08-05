@@ -3,8 +3,8 @@ import React from "react";
 function ProjectCard({ projects }) {
   return (
     <div>
-      {projects.map((project, index) => (
-        <div key={index} className="projectcard-container">
+      {projects.map((project) => (
+        <div key={project.id} className="projectcard-container">
           <img
             className="projectcard-image"
             src={project.image}
