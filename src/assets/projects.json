@@ -3,18 +3,21 @@
     "id": 3,
     "title": "Limoney",
     "description": "Mobile game for kids",
-    "image": "src/assets/images/project3.png"
+    "image": "/images/project3.png",
+    "details": "Details here"
   },
   {
     "id": 2,
     "title": "NC News",
     "description": "Reddit-style article website",
-    "image": "src/assets/images/project2.png"
+    "image": "/images/project2.png",
+    "details": "Details here"
   },
   {
     "id": 1,
     "title": "NC News API",
     "description": "API for the NC News app",
-    "image": "src/assets/images/project1.png"
+    "image": "/images/project1.png",
+    "details": "Details here"
   }
 ]
