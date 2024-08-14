@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 2rem;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
 }
 
 .footer-text {
