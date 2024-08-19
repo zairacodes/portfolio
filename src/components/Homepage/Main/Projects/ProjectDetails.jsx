@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import "./Projects.css";
 
 function ProjectDetails({ projects }) {
   const { id } = useParams();
@@ -11,11 +12,15 @@ function ProjectDetails({ projects }) {
   }
 
   return (
-    <div>
-      <h1>{project.title}</h1>
-      <p>{project.description}</p>
-      <p>{project.details}</p>
-      <img src={`/images/project${id}.png`} alt={project.title} />
+    <div className="projectdetails-container">
+      <h1 className="projectdetails-title">{project.title}</h1>
+      <p className="projectdetails-description">{project.description}</p>
+      <p className="projectdetails-details">{project.details}</p>
+      <img
+        className="projectdetails-image"
+        src={`/images/project${id}.png`}
+        alt={project.title}
+      />
     </div>
   );
 }
