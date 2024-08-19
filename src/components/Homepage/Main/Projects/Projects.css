@@ -30,7 +30,6 @@ body {
 }
 
 .projectcard-container .content {
-    font-size: 1.5rem;
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -53,8 +52,19 @@ body {
     margin-bottom: -0.5rem;
 }
 
-.projectcard-description {
+.projectcard-description, .projectcard-link a {
     font-size: 1.2rem;
+}
+
+.projectcard-link a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.projectcard-link a:hover {
+    color: #000000;
+    text-shadow: 0 0 8px #FFFFFF;
 }
 
 .projectcard-container:hover {
@@ -87,7 +97,6 @@ body {
     }
 
     .projectcard-container .content {
-        font-size: 1rem;
         padding: 10px;
         transform: translateY(70%);
         transition: all 0.5s ease-in-out;
@@ -98,7 +107,7 @@ body {
         margin-bottom: -0.3rem;
     }
 
-    .projectcard-description {
+    .projectcard-description, .projectcard-link a {
         font-size: 1rem;
     }
 
