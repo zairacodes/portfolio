@@ -4,20 +4,23 @@
     "title": "Limoney",
     "description": "Mobile game for kids",
     "image": "/images/project3.png",
-    "details": "Details here"
+    "details": "Details here",
+    "banner": "Banner here"
   },
   {
     "id": 2,
     "title": "NC News",
     "description": "Reddit-style article website",
     "image": "/images/project2.png",
-    "details": "Details here"
+    "details": "Details here",
+    "banner": "Banner here"
   },
   {
     "id": 1,
-    "title": "NC News API",
+    "title": "Northcoders News API",
     "description": "API for the NC News app",
     "image": "/images/project1.png",
-    "details": "Details here"
+    "details": "Hello there!\n\nThank you for your interest in my first back-end project.\n\nYou can explore the hosted version of the API [here](https://be-nc-news-6djf.onrender.com/api/).\nPlease note that since this project is on a free plan, there may be delays of 50 seconds or more due to inactivity causing the server to spin down. Thanks for your patience.\n## Overview\nThe Northcoders News API serves as a platform for accessing and interacting with various articles, topics, comments and users, aiming to mimic a real-world backend service like [Reddit](https://www.reddit.com/).\nThis API serves as the backend for the NC News application, handling all server-side logic and database management. You can explore the front-end project [here](https://github.com/zairacodes/nc-news/) and the deployed app [here](https://ncnews-zaira.netlify.app/).\n### API Endpoints Preview\n![be_nc_news](https://github.com/user-attachments/assets/ba4fa246-ad72-4aa4-ad82-8d2c473ea559)\n## Tech Stack\n- **Testing**: Jest, Supertest (TDD)\n- **Backend**: Express\n- **Database**: PostgreSQL\n- **Hosting**: Supabase (DB), Render (API)\n## Useful Links\n- [API](https://be-nc-news-6djf.onrender.com/api/)\n- [Front-end Project](https://github.com/zairacodes/nc-news/)\n- [Front-end Application](https://ncnews-zaira.netlify.app/)\n\nFeel free to reach out if you have any questions or feedback!\n\n[This portfolio project was created as part of a Digital Skills Bootcamp in Software Engineering provided by [Northcoders](https://northcoders.com/)]",
+    "banner": "[![Made with ♥ by Zaira](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%20by-Zaira-red)](https://www.linkedin.com/in/zaira-n/)"
   }
 ]
