@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import "./Projects.css";
 
 function ProjectDetails({ projects }) {
@@ -15,12 +16,17 @@ function ProjectDetails({ projects }) {
     <div className="projectdetails-container">
       <h1 className="projectdetails-title">{project.title}</h1>
       <p className="projectdetails-description">{project.description}</p>
-      <p className="projectdetails-details">{project.details}</p>
+      <div className="projectdetails-details">
+        <ReactMarkdown children={project.details} />
+      </div>
       <img
         className="projectdetails-image"
         src={`/images/project${id}.png`}
         alt={project.title}
       />
+      <div className="projectdetails-banner">
+        <ReactMarkdown children={project.banner} />
+      </div>
     </div>
   );
 }
