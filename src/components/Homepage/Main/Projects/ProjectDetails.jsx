@@ -9,7 +9,11 @@ function ProjectDetails({ projects }) {
   const project = projects.find((p) => p.id === projectId);
 
   if (!project) {
-    return <p>Project not found</p>;
+    return (
+      <p className="not-found" role="alert">
+        Oops! Project not found...
+      </p>
+    );
   }
 
   return (
