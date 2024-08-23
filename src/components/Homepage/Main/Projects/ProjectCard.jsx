@@ -13,19 +13,20 @@ function ProjectCard({ projects }) {
             expandedId === project.id ? "expanded" : ""
           }`}
           onClick={() => setExpandedId(project.id)}
+          aria-expanded={expandedId === project.id}
         >
           <img
             className="projectcard-image"
             src={project.image}
             alt={`${project.title} – Preview`}
           />
-          <div className="content">
-            <h3 className="projectcard-title">{project.title}</h3>
-            <p className="projectcard-description">{project.description}</p>
-            <p className="projectcard-link">
-              <Link to={`projects/${project.id}`}>Read More</Link>
-            </p>
-          </div>
+          <Link to={`projects/${project.id}`}>
+            <div className="content">
+              <h3 className="projectcard-title">{project.title}</h3>
+              <p className="projectcard-description">{project.description}</p>
+              <p className="projectcard-readmore">Read More</p>
+            </div>
+          </Link>
         </div>
       ))}
     </div>
