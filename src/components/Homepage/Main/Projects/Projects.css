@@ -1,8 +1,3 @@
-body {
-    display: grid;
-    place-items: center;
-}
-
 .projects-container {
     display: flex;
     justify-content: center;
@@ -30,10 +25,10 @@ body {
 }
 
 .projectcard-container .content {
-    font-size: 1.5rem;
     color: #FFFFFF;
     display: flex;
     align-items: center;
+    text-align: center;
     padding: 15px;
     opacity: 0;
     flex-direction: column;
@@ -53,8 +48,19 @@ body {
     margin-bottom: -0.5rem;
 }
 
-.projectcard-description {
+.projectcard-description, .projectcard-link a {
     font-size: 1.2rem;
+}
+
+.projectcard-link a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.projectcard-link a:hover {
+    color: #000000;
+    text-shadow: 0 0 8px #FFFFFF;
 }
 
 .projectcard-container:hover {
@@ -68,26 +74,50 @@ body {
     transform: translateY(0%);
 }
 
+.projectdetails-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+}
+
+.projectdetails-title {
+    font-size: 2.5rem;
+}
+
+.projectdetails-description {
+    font-size: 2.2rem;
+}
+
+.projectdetails-details {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 20px;
+}
+
+.projectdetails-details img, .projectdetails-image, .projectdetails-banner {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+}
+
 @media (max-width: 790px) {
     .projects-container {
         flex-direction: column;
         place-items: center;
-        overflow-x: auto;
         gap: 10px;
         padding: 10px;
         height: auto;
     }
 
     .projectcard-container {
-        width: 90vw;
-        max-width: 400px;
-        height: 200px;
+        display: flex;
+        width: 100%;
         box-shadow: 1px 3px 10px #8B4513;
         transition: all 0.5s ease-in-out;
     }
 
     .projectcard-container .content {
-        font-size: 1rem;
         padding: 10px;
         transform: translateY(70%);
         transition: all 0.5s ease-in-out;
@@ -98,7 +128,7 @@ body {
         margin-bottom: -0.3rem;
     }
 
-    .projectcard-description {
+    .projectcard-description, .projectcard-link a {
         font-size: 1rem;
     }
 
@@ -117,5 +147,17 @@ body {
 
     .projectcard-container.expanded .projectcard-image {
         object-position: center;
+    }
+    
+    .projectdetails-title {
+        font-size: 1.5rem;
+    }
+    
+    .projectdetails-description {
+        font-size: 1.2rem;
+    }
+    
+    .projectdetails-details {
+        font-size: 1rem;
     }
 }

@@ -5,7 +5,7 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <section className="projects-container">
+    <section>
       <div>
         <ProjectCard projects={projectsData} />
       </div>
