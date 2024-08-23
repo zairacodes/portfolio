@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
-    <header className="header">
-      <h1 className="header-text">Zaira</h1>
+    <header className="header" aria-label="Header section">
+      <Link to="/" aria-label="Go to homepage">
+        <div className="header-text">Zaira</div>
+      </Link>
     </header>
   );
 }
