@@ -80,6 +80,11 @@
     margin: 80px;
 }
 
+.projectdetails-container a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
 .projectdetails-title {
     font-size: 2.5rem;
 }
