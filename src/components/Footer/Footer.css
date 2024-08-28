@@ -1,5 +1,4 @@
 .footer {
-    box-sizing: border-box;
     padding: 2rem;
     width: 100vw;
 }
@@ -9,4 +8,10 @@
     text-align: left;
     font-size: 1rem;
     font-weight: 400;
+}
+
+@media (max-width: 790px) {
+    .footer {
+        padding: 1rem;
+    }
 }
