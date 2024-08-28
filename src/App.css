@@ -1,9 +1,10 @@
 .app-container {
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
   padding: 2rem;
   background: linear-gradient(135deg, #FFEDD5, #FFCBA4, #FFB3A0);
   overflow-x: hidden;
-  overflow-x: clip !important;
+  overflow-y: scroll;
 }
 
 * {
