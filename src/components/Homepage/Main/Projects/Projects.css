@@ -177,7 +177,7 @@
     .projectdetails-title,
     .projectdetails-description,
     .projectdetails-details {
-        padding: 0 16px;
+        padding: 0 14px 0 28px;
     }
     
     .projectdetails-title {
