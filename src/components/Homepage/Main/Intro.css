@@ -16,3 +16,18 @@
 .intro-subtext {
     font-size: 2rem;
 }
+
+@media (max-width: 790px) {
+    .intro-container {
+        padding-bottom: 0.5rem;
+        padding-left: 0;
+    }
+
+    .intro-text {
+        font-size: 2rem;
+    }
+
+    .intro-subtext {
+        font-size: 1.5rem;
+    }
+}

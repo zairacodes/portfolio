@@ -6,9 +6,8 @@ import "./Projects.css";
 function Projects() {
   return (
     <section>
-      <div>
-        <ProjectCard projects={projectsData} />
-      </div>
+      <h2 className="projects-heading-sr">Projects</h2>
+      <ProjectCard projects={projectsData} />
     </section>
   );
 }
