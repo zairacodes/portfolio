@@ -4,7 +4,11 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Homepage from "./components/Homepage/Homepage";
 import ProjectDetails from "./components/Homepage/Main/Projects/ProjectDetails";
+import Contact from "./components/Footer/Contact/Contact";
 import projectsData from "../src/assets/projects.json";
+import emailjs from "@emailjs/browser";
+
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 function App() {
   return (
@@ -16,6 +20,7 @@ function App() {
           path="/projects/:id"
           element={<ProjectDetails projects={projectsData} />}
         />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
