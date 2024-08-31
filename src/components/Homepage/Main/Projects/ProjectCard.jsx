@@ -13,7 +13,6 @@ function ProjectCard({ projects }) {
             expandedId === project.id ? "expanded" : ""
           }`}
           onClick={() => setExpandedId(project.id)}
-          aria-expanded={expandedId === project.id}
         >
           <img
             className="projectcard-image"
