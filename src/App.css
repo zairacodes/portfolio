@@ -1,10 +1,10 @@
 .app-container {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding: 2rem;
   background: linear-gradient(135deg, #FFEDD5, #FFCBA4, #FFB3A0);
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 * {

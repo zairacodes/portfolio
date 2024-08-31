@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Homepage from "./components/Homepage/Homepage";
 import ProjectDetails from "./components/Homepage/Main/Projects/ProjectDetails";
 import Contact from "./components/Footer/Contact/Contact";
+import ScrollToTop from "../src/ScrollToTop";
 import projectsData from "../src/assets/projects.json";
 import emailjs from "@emailjs/browser";
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="app-container">
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route
