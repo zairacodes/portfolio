@@ -5,7 +5,7 @@ function Intro() {
   return (
     <section className="intro-container">
       <h1 className="intro-text">Hi there, I'm Zaira!</h1>
-      <p className="intro-subtext">Software Developer</p>
+      <h2 className="intro-subtext">Software Developer</h2>
     </section>
   );
 }
