@@ -8,6 +8,7 @@ import Contact from "./components/Footer/Contact/Contact";
 import ScrollToTop from "../src/ScrollToTop";
 import projectsData from "../src/assets/projects.json";
 import emailjs from "@emailjs/browser";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }
