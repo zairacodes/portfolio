@@ -9,6 +9,7 @@ import ScrollToTop from "../src/ScrollToTop";
 import projectsData from "../src/assets/projects.json";
 import emailjs from "@emailjs/browser";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
@@ -27,6 +28,7 @@ function App() {
       </Routes>
       <Footer />
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
