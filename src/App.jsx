@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Homepage from "./components/Homepage/Homepage";
 import ProjectDetails from "./components/Homepage/Main/Projects/ProjectDetails";
 import Contact from "./components/Footer/Contact/Contact";
+import NotFound from "./components/Homepage/NotFound";
 import ScrollToTop from "../src/ScrollToTop";
 import projectsData from "../src/assets/projects.json";
 import emailjs from "@emailjs/browser";
@@ -25,6 +26,7 @@ function App() {
           element={<ProjectDetails projects={projectsData} />}
         />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <SpeedInsights />
