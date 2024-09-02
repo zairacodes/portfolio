@@ -14,7 +14,8 @@ I love crafting creative solutions while continuously learning along the way. I 
 - **Build Tool**: Vite
 - **Deployment**: Vercel
 - **Email Handling**: EmailJS
-- **Graphics**: Canva
+- **Accessibility Tools**: Lighthouse, WAVE
+- **Graphics**: Figma, Canva
 
 ## Getting Started
 
